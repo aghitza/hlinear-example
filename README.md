@@ -31,6 +31,8 @@ echelon form:
 [ 1/1 2/1 3/1 ]
 [ 0/1 1/1 2/1 ]
 ```
+5. The code defining the input matrix and calling HLinear for the PLE decomposition is in app/Main.hs.
+Modify to suit your needs.
 
 ## License
 

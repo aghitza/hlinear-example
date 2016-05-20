@@ -15,7 +15,7 @@
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-5.17
+resolver: lts-5.16
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -37,9 +37,17 @@ resolver: lts-5.17
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - '.'
+- '../algebraic-structures'
+- '../hflint'
+- '../hlinear'
+- '../natural-test'
+- '../vector-test'
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps: []
+extra-deps: [ permutation-0.5.0.5
+            , random-extras-0.19
+            , tuple-0.3.0.2
+            , OneTuple-0.2.1]
 
 # Override default flag values for local packages and extra-deps
 flags: {}

@@ -4,10 +4,8 @@ Simple, ready-to-be-cannibalized example of using [HLinear](https://github.com/m
 
 ## Installation and usage
 
-* Install [HLinear](https://github.com/martinra/hlinear) in a directory, say hlinear-all.
 * Get hlinear-example:
 ```
-cd hlinear-all
 git clone https://github.com/aghitza/hlinear-example.git
 ```
 * Build hlinear-example:

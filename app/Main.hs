@@ -8,10 +8,10 @@ import HLinear.PLE.Decomposition as D
 main :: IO ()
 main = do
   let m = M.fromListsUnsafe [[1,2,3],[4,5,6]] :: Matrix FMPQ
-      (pm, lm, em) = D.toMatrices $ D.pleDecomposition m
+      (p, l, e) = D.toMatrices $ D.pleDecomposition m
   putStrLn "permutation:"
-  print pm
+  print p
   putStrLn "left transformation:"
-  print lm
+  print l
   putStrLn "echelon form:"
-  print em
+  print e
